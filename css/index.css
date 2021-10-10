@@ -491,4 +491,13 @@ left: 50px;
 top: 381px;
 
 background: #1E969C;
-}    
+}  
+
+.submitt {
+  position: absolute;
+  width: 131px;
+  height: 40px;
+  left: 595px;
+  top: 451px;
+  background: #1E969C;
+}  
