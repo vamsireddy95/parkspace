@@ -1,0 +1,42 @@
+<html>
+    <head>
+            <title>Park Space</title>
+            <link rel="stylesheet" href="css/index.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="dashboard_main">
+            <h2 class="dashboard_park">Park Space</h2>
+        </div>
+        <form method="post" action="select_location.html" >
+            <input type="text" name="my_location_space" class="my_location_space" placeholder="find parking space at" />
+             <input type="text" name="my_location" class="my_location" placeholder="use my location" />
+            <button type="submit" name="submit" class="dashboard_search"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div id="map"></div>
+
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+    ></script>
+
+    <script>
+    function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 58.5975, lng: 24.07494 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+    </script>
+
+    </body>                                    
+</html>
