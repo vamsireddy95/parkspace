@@ -21,6 +21,17 @@
         border: 1px solid #1E969C;
         box-sizing: border-box;
       }
+      .cardNumber {
+        position: absolute;
+        width: 430px;
+        height: 40px;
+        left: 468px;
+        top:286px;
+        background: #F4F4F4;
+        border: 1px solid #1E969C;
+        box-sizing: border-box;
+      }
+
       .password {
         position: absolute;
         width: 430px;
